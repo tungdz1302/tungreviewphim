@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Phim</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to right, #ff6f61, #de6262);
+      color: #fff;
+      padding: 30px 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    header .header-text {
+      text-align: left;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    header .header-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    header .header-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .main-content {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #292929;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .movie {
+      background: #1c1c1c;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .movie:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .movie img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .movie h3 {
+      margin: 15px 0;
+      font-size: 1.4em;
+      color: #ff6f61;
+      text-align: center;
+    }
+
+    .movie a {
+      display: block;
+      margin: 10px auto 20px;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #ff6f61;
+      border-radius: 5px;
+      font-weight: bold;
+      width: fit-content;
+      transition: background-color 0.3s;
+    }
+
+    .movie a:hover {
+      background-color: #de6262;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #777;
+      font-size: 0.9em;
+      margin-top: 30px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-text">
+      <h1>Review Phim</h1>
+      <p>Góc nhìn chân thực - Đánh giá khách quan</p>
+    </div>
+    <div class="header-image">
+      <img src="phim.jpeg" alt="Header Image">
+    </div>
+  </header>
+
+  <div class="main-content">
+    <h2 style="text-align: center; margin-bottom: 30px; color: #ff6f61;">🔥Phim Hot Hiện Nay🔥</h2>
+    <div class="movie-grid">
+      <!-- Movie Card 1 -->
+      <div class="movie">
+        <img src="movie1.jpeg" alt="Movie 1 Poster">
+        <h3>Titanic</h3>
+        <a href="movie1.html">Review</a>
+      </div>
+
+      <!-- Movie Card 2 -->
+      <div class="movie">
+        <img src="movie2.jpeg" alt="Movie 2 Poster">
+        <h3>Tron</h3>
+        <a href="movie2.html">Review</a>
+      </div>
+
+      <!-- Movie Card 3 -->
+      <div class="movie">
+        <img src="movie3.jpeg" alt="Movie 3 Poster">
+        <h3>Đào, Phở và Piano</h3>
+        <a href="movie3.html">Review</a>
+      </div>
+<!-- Movie Card 4 -->
+      <div class="movie">
+        <img src="movie4.jpeg" alt="Movie 4 Poster">
+        <h3>Mắt biếc</h3>
+        <a href="movie4.html">Review</a>
+      </div>
+
+      <!-- Movie Card 5 -->
+      <div class="movie">
+        <img src="movie5.jpeg" alt="Movie 5 Poster">
+        <h3>Đất rừng phương Nam</h3>
+        <a href="movie5.html">Review</a>
+      </div>
+
+      <!-- Movie Card 6 -->
+      <div class="movie">
+        <img src="movie6.jpeg" alt="Movie 6 Poster">
+        <h3>Godzilla X Kong</h3>
+        <a href="movie6.html">Review</a>
+      </div>
+<!-- Movie Card 7 -->
+      <div class="movie">
+        <img src="movie7.jpeg" alt="Movie 7 Poster">
+        <h3>Kẻ ăn hồn</h3>
+        <a href="movie7.html">Review</a>
+      </div>
+
+      <!-- Movie Card 8 -->
+      <div class="movie">
+        <img src="movie8.jpeg" alt="Movie 8 Poster">
+        <h3>Biệt đội đánh thuê (4)</h3>
+        <a href="movie8.html">Review</a>
+      </div>
+
+      <!-- Movie Card 9 -->
+      <div class="movie">
+        <img src="movie9.jpeg" alt="Movie 9 Poster">
+        <h3>Aquaman</h3>
+        <a href="movie9.html">Review</a>
+      </div>
+<!-- Movie Card 10 -->
+      <div class="movie">
+        <img src="movie10.jpeg" alt="Movie 10 Poster">
+        <h3>Cám Ngoại Truyện</h3>
+        <a href="movie10.html">Review</a>
+      </div>
+
+      <!-- Movie Card 11 -->
+      <div class="movie">
+        <img src="movie11.jpeg" alt="Movie 11 Poster">
+        <h3>Tết ở Làng Địa Ngục</h3>
+        <a href="movie11.html">Review</a>
+      </div>
+
+      <!-- Movie Card 12 -->
+      <div class="movie">
+        <img src="movie12.jpeg" alt="Movie 12 Poster">
+        <h3>Harry Potter</h3>
+        <a href="movie12.html">Review</a>
+      </div>
+
+      <!-- Add more movie cards as needed -->
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Movie Review Hub. All Rights Reserved.
+  </footer>
+</body>
+</html>
+
